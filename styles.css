@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url("/tcmtc.TTF");
+}
+
+body {
+    background-color: #EDEDF0;
+    font-family: 'CustomFont', 'Courier New', Courier, monospace;
+    width: 85vw;
+    margin: 0 auto;
+    padding-top: .5rem;
+}
+
+.navbar {
+    background-color: #595959;
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.navbar h1 {
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.navbar h1 sup {
+    font-size: 4rem;
+}
+
+.section {
+    margin: 0.75rem;
+    padding: 2rem;
+    border-radius: 2px;
+    background-color: white;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+}
+
+.custom-list {
+    padding-left: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+.custom-list li::before {
+    content: '✓';
+    margin-left: -2rem;
+}
+
+.section-resume .text {
+    margin-top: 0;
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #BDD7EE;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.section-resume .text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero {
+    position: relative;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.hero--image {
+    width: 100%;
+}
+
+.hero--text {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.hero--text p {
+    margin: 0;
+}
+
+.card {
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+    -moz-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+    box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
+}
+
+.card--header {
+    position: relative;
+}
+
+.card--header::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.card--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card--text {
+    font-family: sans-serif;
+    padding: .75rem;
+    color: #3B3838;
+}
+
+.card--title {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: white;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    grid-auto-rows: minmax(10rem, auto);
+    margin: 2rem;
+
+}
+
+.section-news h4 {
+    color: #464545;
+    margin: 0 auto;
+    font-size: 5rem;
+}
+
+.section-title {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-news h4 sup {
+    font-size: 2.5rem;
+}
+
+.footer {
+    background-color: #BDD7EE;
+    color: white;
+    margin: 1rem;
+}
+
+.footer-title {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-title h4 {
+    font-size: 4rem;
+    color: white;
+}
+
+.footer-links {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.brand-link:link, .brand-link:visited {
+    color: black;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 4rem;
+}
+
+.footer-info sup {
+    font-size: 2rem;
+}
+
+.footer-info--left {
+    margin-right: auto;
+    margin-left: .5rem;
+}
+
+.footer-info--right {
+    margin-left: auto;
+    margin-right: .5rem;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 600px) {
+    :root {
+        font-size: 6px;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .hero--text {
+        font-size: 5rem;
+    }
+
+    .section-resume .text {
+        font-size: 3rem;
+    }
+    
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card--text {
+        font-size: 2rem;
+    }
+
+    .card--title {
+        font-size: 5rem;
+    }
+}
