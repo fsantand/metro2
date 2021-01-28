@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'CustomFont';
-    src: url("/tcmtc.TTF");
-}
-
 body {
     background-color: #EDEDF0;
-    font-family: 'CustomFont', 'Courier New', Courier, monospace;
+    font-family: 'fontscorecomttwcenmt', 'Courier New', Courier, monospace;
     width: 85vw;
     margin: 0 auto;
     padding-top: .5rem;
