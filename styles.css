@@ -236,16 +236,12 @@ body {
     .section-resume .text {
         font-size: 3rem;
     }
-    
-    .row {
-        grid-template-columns: repeat(1, 1fr);
-    }
 
     .card--text {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .card--title {
-        font-size: 5rem;
+        font-size: 2rem;
     }
 }
