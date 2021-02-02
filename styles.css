@@ -1,6 +1,6 @@
 body {
     background-color: #EDEDF0;
-    font-family: 'fontscorecomttwcenmt', 'Courier New', Courier, monospace;
+    font-family: 'Spartan', 'Courier New', Courier, monospace;
     width: 85vw;
     margin: 0 auto;
     padding-top: .5rem;
@@ -8,6 +8,7 @@ body {
 
 h1, h4 {
     font-family: 'Spartan';
+    font-weight: 900;
 }
 
 .navbar {
