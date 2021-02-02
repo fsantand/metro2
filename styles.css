@@ -35,6 +35,7 @@ h1, h4 {
 .section {
     margin: 0.75rem;
     padding: 2rem;
+    margin-bottom: 2rem;
     border-radius: 2px;
     background-color: white;
     -webkit-box-shadow: 10px 10px 15px -4px rgba(0,0,0,0.12);
@@ -166,6 +167,7 @@ h1, h4 {
     display: flex;
     justify-items: center;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .section-news h4 sup {
@@ -226,6 +228,10 @@ h1, h4 {
     grid-template-columns: repeat(2, 1fr);
     font-size: 4rem;
     align-items: baseline;
+}
+
+.footer-title {
+    padding-top: 1rem;
 }
 
 .footer-info sup {
