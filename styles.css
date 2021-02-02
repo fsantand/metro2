@@ -27,6 +27,7 @@ h1, h4 {
     font-size: 5rem;
     text-transform: uppercase;
     font-family: 'Spartan';
+    transform: translateX(1rem);
 }
 
 .navbar h1 sup {
@@ -145,6 +146,7 @@ h1, h4 {
 }
 
 .card--title {
+    font-weight: 500;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -280,6 +282,18 @@ h1, h4 {
 }
 
 /* Responsiveness */
+@media only screen and (max-width: 1400px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    :root {
+        font-size: 8px;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     :root {
